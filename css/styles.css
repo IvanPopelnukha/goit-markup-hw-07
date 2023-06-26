@@ -483,31 +483,40 @@ textarea {
     flex-direction: row;
     align-items: center;
 }
+.footer-label {
+    gap: 24px;
+}
 .footer-input {
-    margin-right: 24px;
     padding-left: 16px;
+
     width: 264px;
     height: 40px;
 
     border-radius: 4px;
-    border-color: var(--white-color);
-    background-color: var(--navy-blue-color);
+    border: 1px solid var(--white-color);
+
+    font-size: 12px;
+    letter-spacing: 0.04em;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    background-color: transparent;
     color: var(--white-color);
 }
 .footer-input::placeholder {
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
-    text-align: left;
     color: var(--white-color);
 }
 .footer-button {
     display: flex;
+    justify-content: center;
     align-items: center;
+
+    min-width: 165px;
 
     padding: 8px 24px;
     height: 40px;
 
+    border: none;
     border-radius: 4px;
     background-color: var(--iris-color);
     color: var(--white-color);
@@ -524,8 +533,8 @@ textarea {
 
     cursor: pointer;
 }
-.button-text {
-    margin-right: 16px;
+.send-svg {
+    margin-left: 16px;
 }
 .footer-button:hover,
 .footer-button:focus {
