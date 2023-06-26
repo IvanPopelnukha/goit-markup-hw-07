@@ -714,11 +714,11 @@ textarea {
 .coments:focus {
     border-color: var(--iris-color);
 }
-[type="checkbox"] {
+/* [type="checkbox"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-}
+} */
 .form-checkbox {
     display: flex;
     align-items: center;
@@ -744,18 +744,20 @@ textarea {
     border var(--transition-duration) var(--timing-function), 
     fill var(--transition-duration) var(--timing-function);
 }
-.checkbox:checked + .checkbox-svg {
-    color: var(--white-color);
+.checkbox:checked ~ .checkbox-svg {
+    fill: var(--cloud-color);
     background-color: var(--ocean-color);
+    border: none;
+    /* background-origin: border-box; */
     
-    
-    border-color: var(--ocean-color);
-    background-origin: border-box;
 }
 .label-checkbox {
 }
 .check-icon {
 
+}
+.privacy-link {
+    color: var(--iris-color);
 }
 .form-button {
     padding: 16px 64px;
@@ -778,7 +780,7 @@ textarea {
     color: var(--white-color);
     border-radius: 4px;
     border: none;
-    
+
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
     transition: background-color var(--transition-duration) var(--timing-function);
@@ -799,9 +801,6 @@ textarea {
     justify-content: center;
 
     margin-bottom: 72px;    
-}
-.btn-list .item {
-    
 }
 .btn {
     padding: 12px 24px;
