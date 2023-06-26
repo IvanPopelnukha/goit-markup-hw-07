@@ -482,9 +482,10 @@ textarea {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 24px;
 }
 .footer-label {
-    gap: 24px;
+    
 }
 .footer-input {
     padding-left: 16px;
@@ -496,6 +497,7 @@ textarea {
     border: 1px solid var(--white-color);
 
     font-size: 12px;
+    line-height: 1.5;
     letter-spacing: 0.04em;
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
