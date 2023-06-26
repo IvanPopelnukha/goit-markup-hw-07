@@ -714,11 +714,6 @@ textarea {
 .coments:focus {
     border-color: var(--iris-color);
 }
-/* [type="checkbox"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-} */
 .form-checkbox {
     display: flex;
     align-items: center;
@@ -744,12 +739,11 @@ textarea {
     border var(--transition-duration) var(--timing-function), 
     fill var(--transition-duration) var(--timing-function);
 }
-.checkbox:checked ~ .checkbox-svg {
+.checkbox:checked + .checkbox-svg {
     fill: var(--cloud-color);
     background-color: var(--ocean-color);
     border: none;
-    /* background-origin: border-box; */
-    
+   
 }
 .label-checkbox {
 }
