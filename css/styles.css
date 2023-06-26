@@ -637,7 +637,7 @@ textarea {
 }
 .form-label {
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     text-align: left;
     margin-bottom: 4px;
@@ -651,15 +651,17 @@ textarea {
     margin: 0;
     padding: 0;
     padding-left: 38px;
+    background-color: transparent;
 
     border: 1px solid var(--navy-blue-modal);
     border-radius: 4px;
 
     margin-bottom: 8px;
-    transform: border-color var(--transition-duration) var(--timing-function);
-
+    
     cursor: pointer;
-    outline: none;
+    outline: transparent;
+
+    transition: border-color var(--transition-duration) var(--timing-function);
 }
 .form-input:focus {
     border-color: var(--iris-color);
