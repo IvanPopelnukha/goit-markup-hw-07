@@ -739,7 +739,7 @@ textarea {
     border var(--transition-duration) var(--timing-function), 
     fill var(--transition-duration) var(--timing-function);
 }
-.checkbox:checked + .checkbox-svg {
+.checkbox:checked + .label-checkbox>.checkbox-svg {
     fill: var(--cloud-color);
     background-color: var(--ocean-color);
     border: none;
