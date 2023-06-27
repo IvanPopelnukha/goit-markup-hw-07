@@ -671,25 +671,24 @@ textarea {
 }
 .icon-position {
    position: relative;
-
+   height: 40px;
+   
    color: var(--navy-blue-modal);
 }
 .form-icon {
    position: absolute;
 
-   top: 50%;
-   left: 16px; 
-
-   fill: currentColor;
+   left: 16px;
+   top: 50%; 
    transform: translateY(-50%);
-   cursor: pointer;
 
+   cursor: pointer;
+   fill: currentColor;
    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.coments::placeholder {  
-    padding-top: 8px;
-    
-}
+/* .coments::placeholder {  
+    padding-top: 8px; 
+} */
 .coments-group {
     margin-bottom: 16px;
 }
