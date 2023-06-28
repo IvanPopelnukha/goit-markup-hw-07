@@ -663,8 +663,12 @@ textarea {
 
     transition: border-color var(--transition-duration) var(--timing-function);
 }
+.form-input:hover,
 .form-input:focus {
+    /* color: var(--iris-color);
+    fill: currentColor; */
     border-color: var(--iris-color);
+    
 }
 .form-input:focus ~ .form-icon {
     color: var(--iris-color);
@@ -672,8 +676,10 @@ textarea {
 .icon-position {
    position: relative;
    height: 40px;
-   
-   color: var(--navy-blue-modal);
+   color: var(--navy-blue-color);
+}
+.icon-position:hover {
+    color: var(--iris-color);
 }
 .form-icon {
    position: absolute;
@@ -683,12 +689,10 @@ textarea {
    transform: translateY(-50%);
 
    cursor: pointer;
+  
    fill: currentColor;
-   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: fill var(--transition-duration) var(--timing-function);
 }
-/* .coments::placeholder {  
-    padding-top: 8px; 
-} */
 .coments-group {
     margin-bottom: 16px;
 }
@@ -710,6 +714,7 @@ textarea {
     cursor: pointer;
     outline: transparent;
 }
+.coments:hover,
 .coments:focus {
     border-color: var(--iris-color);
 }
