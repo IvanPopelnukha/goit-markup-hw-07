@@ -494,7 +494,7 @@ textarea {
     height: 40px;
 
     border-radius: 4px;
-    border: 1px solid var(--light-slate-color);
+    border: 1px solid var(--white-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
     font-size: 12px;
@@ -510,7 +510,7 @@ textarea {
 }
 .footer-input:hover,
 .footer-input:focus {
-    border-color: var(--white-color);
+    border-color: var(--light-slate-color);
 }
 .footer-input::placeholder {
     color: var(--white-color);
