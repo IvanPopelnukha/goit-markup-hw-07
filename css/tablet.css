@@ -1,0 +1,161 @@
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+/**
+  |============================
+  | Header site
+  |============================
+*/
+
+    .menu-button {
+        display: none;
+    }
+
+    .nav-flex,
+    .address {
+        display: block;
+    }
+
+    .nav {
+        display: flex;
+        gap: 40px;
+    
+        font-weight: 500;
+    }
+
+    .nav .item {
+        display: block;
+    
+        padding-top: 24px;
+        padding-bottom: 24px;
+        color: var(--navy-blue-color);
+    
+        transition: color var(--transition-duration) var(--timing-function);
+    }
+    
+    .nav .item:hover,
+    .nav .item:focus {
+        color: var(--ocean-color);
+    }
+    
+    .nav .nav-link {
+        color: var(--navy-blue-color);
+    }
+         
+    .nav .current {
+        position: relative;
+        color: var(--ocean-color);
+    }
+    
+    .nav .current::after {
+        position: absolute;
+        content: "";
+    
+        width: 100%;
+        height: 4px;
+        bottom: -1px;
+        left: 0;
+    
+        background-color: var(--ocean-color);
+        border-radius: 2px;
+    }
+
+    .address {
+        font-style: normal;
+    }
+
+    .address .item {
+        color: var(--slate-color);
+        
+        transition: color var(--transition-duration) var(--timing-function);
+    }
+
+    .address .item:hover,
+    .address .item:focus {
+        color: var(--ocean-color);
+    }
+
+/**
+  |============================
+  | secstion HERO SITE
+  |============================
+*/
+        .hero-title {
+            min-width: 496px;
+            margin-bottom: 36px;
+            font-size: 56px;
+        }
+/**
+  |============================
+  | Features section
+  |============================
+*/
+        .features-icon {
+            display: none;
+        }
+        .feature-set {
+        --items: 2;
+        --indent: 24px;
+        row-gap: 72px;
+        }
+
+ /**
+   |============================
+   | Team section
+   |============================
+ */
+    
+    .team-box {
+    --items: 2;
+    row-gap: 64px;
+    }
+
+    .section-tablet {
+        padding-left: 92px;
+        padding-right: 92px;
+    }
+
+ /**
+   |============================
+   | Customers section
+   |============================
+ */
+    .customers-item {
+        --items: 3;
+        --indent: 24px;
+         row-gap: 72px;
+    }
+    
+/**
+  |============================
+  | Footer site
+  |============================
+*/
+    .footer-flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        row-gap: 72px;
+    }
+    .text-footer,
+    .social-flex {
+        margin-bottom: 0;
+    }
+
+    .footer-form {
+        display: flex;
+        
+    
+        gap: 24px;
+        }
+
+    .footer-input {
+        width: 264px;
+    }
+
+    .form-container {
+       
+    }
+}
