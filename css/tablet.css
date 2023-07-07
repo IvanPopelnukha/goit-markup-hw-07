@@ -63,10 +63,13 @@
     }
 
     .address {
+       
         font-style: normal;
+
     }
 
     .address .item {
+        font-size: 12px;
         color: var(--slate-color);
         
         transition: color var(--transition-duration) var(--timing-function);
@@ -81,7 +84,20 @@
   |============================
   | secstion HERO SITE
   |============================
-*/
+*/       
+        .hero {        
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/index/banner/banner-tablet@1x.jpg);
+        }
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/index/banner/banner-tablet@2x.jpg);
+         }
+        }
+
+   
+
         .hero-title {
             min-width: 496px;
             margin-bottom: 36px;
@@ -111,8 +127,8 @@
     --items: 2;
     row-gap: 64px;
 
-    padding-left: 92px;
-    padding-right: 92px;
+    margin-left: 92px;
+    margin-right: 92px;
     }
 
     .team-card {

@@ -21,6 +21,10 @@
         margin-left: auto;
     }
 
+    .address .item {
+        font-size: 16px;
+    }
+
     .address-list {
         display: flex;
         gap: 40px; 
@@ -34,10 +38,15 @@
    .hero {
        padding-top: 188px;
        padding-bottom: 188px;
+       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/index/banner/banner-decstop@1x.jpg);
    }
-
-    /* background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/index/banner.jpg);
-   } */
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/index/banner/banner-decstop@2x.jpg);
+        }
+    }
 
    .hero-title {
        margin-bottom: 48px;
@@ -99,6 +108,9 @@
     .team-box {
        --items: 4;
        padding: 0;
+
+        margin-left: 0px;
+        margin-right: 0px;
     }
  /**
    |============================
@@ -158,3 +170,4 @@
        --items: 3;
    }
 }
+
