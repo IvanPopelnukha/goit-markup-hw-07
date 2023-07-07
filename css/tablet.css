@@ -110,6 +110,13 @@
     .team-box {
     --items: 2;
     row-gap: 64px;
+
+    padding-left: 92px;
+    padding-right: 92px;
+    }
+
+    .team-card {
+        margin: 0;
     }
 
     .section-tablet {
@@ -133,6 +140,12 @@
   | Footer site
   |============================
 */
+
+    .footer-tablet {
+        padding-left: 92px;
+        padding-right: 92px;
+    }
+
     .footer-flex {
         display: flex;
         flex-wrap: wrap;
@@ -158,4 +171,17 @@
     .form-container {
        
     }
+
+/**
+  |============================
+  | MODAL
+  |============================
+*/
+
+    .modal {
+        min-width: 408px;
+        min-height: 584px;
+    }
+
+
 }

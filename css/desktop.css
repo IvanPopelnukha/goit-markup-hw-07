@@ -5,7 +5,7 @@
     }
         
     .section {
-         padding-top: 120px;
+        padding-top: 120px;
         padding-bottom: 120px;
     }
 /**
@@ -97,6 +97,7 @@
  */
     .team-box {
        --items: 4;
+       padding: 0;
     }
  /**
    |============================
@@ -115,6 +116,11 @@
     .footer {
         padding-top: 100px;
         padding-bottom: 100px;
+    }
+
+    .footer-tablet {
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .footer-flex {
@@ -136,6 +142,13 @@
         
     }
 
+/**
+  |============================
+  | MODAL
+  |============================
+*/
+
+   
     
         
 }
