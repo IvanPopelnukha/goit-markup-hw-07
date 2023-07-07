@@ -6,6 +6,8 @@
 
 .menu-container {
     position: fixed;
+
+    padding: 80px 35px 0px 40px;
     top: 0;
     left: 0;
     width: 100%;
@@ -23,17 +25,18 @@
 }
 
 .menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    
     height: 100%;
     width: 100%;
     padding: 0;
-    margin: 80px 35px 0px 40px;
-
+    
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: 1.11;
-    letter-spacing: 0.72px;
+    letter-spacing: 0.72px;  
 }
 
 .menu-close {
@@ -63,7 +66,7 @@
 
 .nav-mobile {
     text-transform: capitalize;
-    margin-bottom: 284px;
+    margin-bottom: auto;    
 }
 
 .nav-mobile .item {
@@ -84,33 +87,37 @@
     color: var(--ocean-color);
 }
 
-.address-mobile {
-    font-style: normal;
-}
-
-.address-mob-list {
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.address-mob-link {
+.mob-link {
     margin-bottom: 40px;
 }
 
-.address-mob-link .item {
+.mob-link .item {
     color: var(--iris-color);
 }
 
 .address-mob-mail .item {
-    margin-bottom: 48px;
-
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
     color: var(--slate-color);
 }
+.address-mob-list {
+    margin-bottom: 48px;
+}
 
 .mobile-social.social-item {
+    justify-content: flex-start;
     gap: 56px;
+  
+}
+
+@media screen and (max-width: 428px) {
+    .mob-link .item {
+        font-size: 24px;
+    }
+    .mobile-social.social-item {
+        gap: calc((100% - 160px) / 3);
+    }
+    
 }
