@@ -1,5 +1,5 @@
 .container {
-    /* 428-768-1158 */
+
     min-width: 320px;
     max-width: 428px;
     padding: 0px 16px;
@@ -209,7 +209,8 @@
 
  .social-item {
      display: flex;
-     gap: var(--indent);
+     justify-content: center;
+     gap: calc((100% - 160px) / 3);
  }
 
  .team-icon {
@@ -746,6 +747,10 @@ input[type=number]::-webkit-outer-spin-button {
 .project {
     --items: 1;
     row-gap: 48px;
+}
+
+.project-card {
+    outline: 1px solid red;
 }
 
 .project-link {
