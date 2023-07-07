@@ -183,5 +183,23 @@
         min-height: 584px;
     }
 
+/**
+  |============================
+  | Portfolio
+  |============================
+*/
+
+    .portfolio {
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
+
+    .btn-list {
+        justify-content: center;
+     }
+     
+    .project {
+        --items: 2;
+    }
 
 }
