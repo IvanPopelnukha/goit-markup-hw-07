@@ -156,7 +156,9 @@
   | Footer site
   |============================
 */
-
+    .footer {
+        text-align: left;
+    }
     .footer-tablet {
         padding-left: 92px;
         padding-right: 92px;
@@ -175,10 +177,12 @@
 
     .footer-form {
         display: flex;
-        
-    
         gap: 24px;
         }
+
+    .social-header {
+        text-align: left;
+    }
 
     .footer-input {
         width: 264px;
