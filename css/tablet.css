@@ -116,6 +116,9 @@
         --indent: 24px;
         row-gap: 72px;
         }
+        .features-title {
+            text-align: left;
+        }
 
  /**
    |============================
